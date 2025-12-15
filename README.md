@@ -4,4 +4,5 @@ I used the Google Earth Engine library in Python to access this dataset on the G
 
 In order to use Python and the gee library in the Rstudio IDE, you can follow the instructions here: https://philippgaertner.github.io/2020/10/use-gee-python-api-in-rstudio/
 
-These instructions suggest writing Python code in a R markdown file, but you can also create and edit Python scripts directly in Rstudio.
+These instructions suggest writing Python code in a R markdown file, but you can also create and edit Python scripts directly in Rstudio. You can create such a file by selecting: "File" > "New File" > 
+"Python Script"
