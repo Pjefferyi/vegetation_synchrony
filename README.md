@@ -13,8 +13,8 @@ These instructions suggest writing Python code in a R markdown file, but you can
 
 After setting up a python environment that contains the packages necessary to run the python script (ee, pandas, and datetime), tje steps I use to extract the data are as follows: 
 
-1. Make sure that you are  in the cConda Environment that contains the package I need - Python_set_up.R
+1. Make sure that you are  in the cConda Environment that contains the package I need - *Python_set_up.R*
    
-2. Run the script to extract the vegetation data -  Phenology_data_extraction.py
+2. Run the script to extract the vegetation data -  *Phenology_data_extraction.py*
 
-3. The python script will save the extracted data in a folder on your Google Drive account called "GEE_imports". Once you've dowloaded this file, you can merge it with the "maco_data_analysis_10_2025.csv" file and then inspect it in R. An example is shown in the script - phen_data_processing.R
+3. The python script will save the extracted data in a folder on your Google Drive account called "GEE_imports". Once you've dowloaded this file, you can merge it with the "maco_data_analysis_10_2025.csv" file and then inspect it in R. An example is shown in the script - *phen_data_processing.R*
