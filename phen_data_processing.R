@@ -56,7 +56,7 @@ phen <- phen %>% rowwise() %>%
       .names = "{.col}_dt"
     ))
 
-# To see the units for the ther columns EIVI minimum, amplitute, and area, see 
+# To see the units for the ther columns (EVI minimum, amplitude, and area), see 
 # page 7 of the user's guide https://lpdaac.usgs.gov/documents/1417/MCD12Q2_User_Guide_V61.pdf
 
 # We merge the breeding site phenology data with the maco dataset 
