@@ -5,13 +5,12 @@ pacman::p_load(tidyverse, ggplot2,
                sf, terra, lubridate,
                rnaturalearth)
 
-
-# get mapping data 
+# Get mapping data 
 country_pols <- ne_countries(scale = "large", type = "countries")
 bounds <- ne_states(country = c("Canada", "United States of America"))
 Lakes <- ne_download(scale = 110, type = "lakes", category = "physical")
 
-# path to local data repository 
+# Path to local data repository 
 path <- "C:/Users/Jelan/OneDrive/Desktop/University/University of Guelph/Lab_projects/Synchrony_of_migration/local_data/"
 
 # Load movement database 
@@ -24,8 +23,8 @@ phen <- read_csv(paste0(path, "Modis_land_cover_dynamics100.csv"))
 miss <- maco %>% filter(!(id.row %in% unique(phen$id))) %>%
   filter(year >= 2001)
 
-# Individual/points for which phenology data could not be collected can normally be explained by:
-# Missing coordinantes
+# Individual/points for which penology data could not be collected can normally be explained by:
+# Missing coordinates
 # Missing timing values (arr.br, dep.br, arr.nbr, dep.nbr) or NA in "year" column
 # Data collected before 2001 or after 2025
 
@@ -67,7 +66,9 @@ dt_phen_br <- maco %>% merge(phen[phen$location == "br.arrival", c('id','Greenup
 # Let's take a sample of this dataset for plotting
   filter(!duplicated(id.study))
 
-# try plotting green_up times on a map 
+# try plotting green_up times on a map.
+# We can label them with the actual value for the green_up time, and cross-reference it with the 
+# "MODIS/061/MCD12Q2" database usign the inspector tool on the gee website 
 ggplot(data = bounds)+
   geom_sf(colour = "black", fill = "lightgray") +
   coord_sf(xlim = c(-86, -70),ylim = c(40, 48), expand = F) + 
