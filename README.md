@@ -17,4 +17,4 @@ After setting up a python environment that contains the packages necessary to ru
    
 2. Run the script to extract the vegetation data -  Phenology_data_extraction.py
 
-3. The python script (as currently written) will save the extracted data in a folder on your Google Drive account called "GEE_imports". Once you've dowloaded this file, you can merge it with the "maco_data_analysis_10_2025.csv" file and then inspect it in R. An example is shown in the script - phen_data_processing.R
+3. The python script will save the extracted data in a folder on your Google Drive account called "GEE_imports". Once you've dowloaded this file, you can merge it with the "maco_data_analysis_10_2025.csv" file and then inspect it in R. An example is shown in the script - phen_data_processing.R
