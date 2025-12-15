@@ -2,6 +2,10 @@
 # MODIS/Terra+Aqua Land Cover Dynamics Yearly L3 Global 500m SIN Grid V061
 # dataset on the Google Earth Engine Catalog 
 
+# Before running this script, make sure that you are using a python environment 
+# That includes the packages imported below.
+# I use the "Python_set_up_script"" to do this
+
 # Import the necessary libraries 
 import ee # Earth Engine
 import pandas as pd # equivalent of dplyr for Python 
