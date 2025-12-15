@@ -9,7 +9,7 @@ In order to use Python and the gee library in the Rstudio IDE, you can follow th
 These instructions suggest writing Python code in a R markdown file, but you can also create and edit Python scripts directly in Rstudio. You can create such a file by selecting: "File" > "New File" > 
 "Python Script"
 
-# Workflow to extract the phenology Data
+# Workflow to extract the phenology data
 
 After setting up a python environment that contains the packages necessary to run the python script (ee, pandas, and datetime), tje steps I use to extract the data are as follows: 
 
